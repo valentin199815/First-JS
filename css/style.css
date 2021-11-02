@@ -1,0 +1,313 @@
+body {
+  margin: 0;
+}
+
+body img {
+  width: 100%;
+}
+
+nav.navbar {
+  background-color: #b2030a !important;
+}
+
+nav.navbar a {
+  color: white !important;
+  cursor: pointer;
+}
+
+nav.navbar a:hover {
+  text-decoration: underline;
+}
+
+header .maincontainer1 {
+  background-color: #d48166;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+header .maincontainer1 div {
+  padding: 5% 7%;
+}
+
+header .maincontainer1 div img {
+  width: 100%;
+}
+
+header .maincontainer1 .third {
+  text-align: center;
+  color: white;
+  background-color: #b2030a;
+}
+
+header .maincontainer1 .third h2 {
+  padding-bottom: 10%;
+}
+
+header .maincontainer1 .first {
+  background-image: url("../img/capture1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 422px;
+}
+
+header .maincontainer1 .first a {
+  text-decoration: none;
+  color: white;
+  margin-top: 100px;
+}
+
+header .maincontainer1 .first a:hover {
+  text-decoration: underline;
+}
+
+header .maincontainer1 .second {
+  padding: 0;
+  border-radius: 0;
+}
+
+header .maincontainer1 .fouth {
+  background-image: url("../img/C9.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  padding: 10% 0% 0%;
+  color: white;
+  margin: auto;
+  background-color: #7e7e7e;
+}
+
+main .title {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+main .containermain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 18px;
+  margin: auto;
+  width: 80%;
+  padding-bottom: 6%;
+}
+
+main .containermain div {
+  padding: 0% 6%;
+}
+
+main .containermain div a {
+  text-decoration: none;
+  color: #373a36;
+  padding: 13px 20px;
+  border: 1px solid black;
+  display: inline;
+}
+
+main .containermain div a:hover {
+  background-color: #373a36;
+  color: white;
+}
+
+main .containermain div p {
+  margin-bottom: 35px;
+}
+
+@media screen and (max-width: 700px) {
+  main .containermain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main .img {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+
+main .img img {
+  border-radius: 5%;
+}
+
+@media screen and (max-width: 700px) {
+  main .img {
+    width: 100%;
+  }
+}
+
+main div.relative {
+  background-color: black;
+  margin: 5% auto;
+  height: 600px;
+  position: relative;
+}
+
+main div.relative .img {
+  width: 100%;
+  height: 600px;
+  opacity: 0.2;
+}
+
+main div.relative .absolute {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  left: 25%;
+  right: 25%;
+}
+
+main div.relative .absolute h2 {
+  text-align: center;
+  width: 90%;
+  margin: 8% auto;
+  font-size: 70px;
+}
+
+main div.relative .absolute p {
+  text-align: center;
+  margin: 5% auto;
+}
+
+main div.relative .absolute a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 20px;
+  display: block;
+  text-align: center;
+  margin: 0% auto;
+  width: 40%;
+}
+
+@media screen and (max-width: 1000px) {
+  main div.relative .absolute {
+    width: 80%;
+    left: 10%;
+  }
+  main div.relative .absolute p {
+    padding: 0 20px;
+    margin: 8% auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main div.relative .absolute {
+    width: 100%;
+    left: 0;
+  }
+  main div.relative .absolute p {
+    padding: 0 20px;
+    margin: 8% auto;
+  }
+}
+
+main .maincontainer2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+main .maincontainer2 div.first {
+  text-align: center;
+  padding: 10% 7%;
+}
+
+main .maincontainer2 div.first p {
+  padding: 3% 0%;
+}
+
+main .maincontainer2 div.first h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+main .maincontainer2 div.first a {
+  text-decoration: none;
+  background-color: green;
+  color: white;
+  padding: 13px 100px;
+  display: inline;
+  border-radius: 10px;
+}
+
+main .maincontainer2 div.first a:hover {
+  background-color: #1a6602;
+}
+
+main .maincontainer2 div.first a i img {
+  width: 8%;
+  padding-left: 20px;
+}
+
+main .maincontainer2 div.second {
+  padding: 6% 7% 10%;
+}
+
+main .maincontainer2 .third {
+  padding-right: 7%;
+}
+
+main .maincontainer2 div.fouth {
+  padding-left: 7%;
+}
+
+main .maincontainer2 div.fouth a {
+  text-decoration: none;
+  background-color: #1a1c91;
+  text-align: center;
+  color: white;
+  padding: 13px 7%;
+  border-radius: 10px;
+}
+
+main .maincontainer2 div.fouth a:hover {
+  background-color: #1807af;
+}
+
+main .maincontainer2 div.fouth p {
+  padding: 0% 0 2%;
+}
+
+code.details {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 3% 0%;
+  font-size: 30px;
+}
+
+footer .icons a {
+  cursor: pointer;
+  padding: 0% 2%;
+}
+
+footer .icons a img {
+  width: 3%;
+}
+/*# sourceMappingURL=style.css.map */
