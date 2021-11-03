@@ -72,6 +72,12 @@ header .maincontainer1 .first a:hover {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 700px) {
+  header .maincontainer1 .first a {
+    margin-top: 200px;
+  }
+}
+
 header .maincontainer1 .second {
   padding: 0;
   border-radius: 0;
@@ -87,12 +93,14 @@ main {
   padding: 10% 0% 0%;
   color: white;
   margin: auto;
-  background-color: #7e7e7e;
+  background-color: #161616;
 }
 
 main .title {
   text-align: center;
   margin-bottom: 5%;
+  font-weight: bold;
+  text-shadow: 4px 4px #b2030a;
 }
 
 main .containermain {
@@ -116,8 +124,9 @@ main .containermain div a {
   text-decoration: none;
   color: #373a36;
   padding: 13px 20px;
-  border: 1px solid black;
+  border: 1px solid white;
   display: inline;
+  color: white;
 }
 
 main .containermain div a:hover {
@@ -140,12 +149,8 @@ main .containermain div p {
 
 main .img {
   margin: auto;
-  width: 60%;
+  width: 40%;
   text-align: center;
-}
-
-main .img img {
-  border-radius: 5%;
 }
 
 @media screen and (max-width: 700px) {
@@ -182,6 +187,10 @@ main div.relative .absolute h2 {
   font-size: 70px;
 }
 
+main div.relative .absolute h2 i img {
+  width: 10%;
+}
+
 main div.relative .absolute p {
   text-align: center;
   margin: 5% auto;
@@ -196,6 +205,11 @@ main div.relative .absolute a {
   text-align: center;
   margin: 0% auto;
   width: 40%;
+}
+
+main div.relative .absolute a:hover {
+  background-color: #424141;
+  border: 1px solid #424141;
 }
 
 @media screen and (max-width: 1000px) {
@@ -229,11 +243,11 @@ main .maincontainer2 {
 
 main .maincontainer2 div.first {
   text-align: center;
-  padding: 10% 7%;
+  padding: 0% 7% 4%;
 }
 
 main .maincontainer2 div.first p {
-  padding: 3% 0%;
+  padding: 6% 0%;
 }
 
 main .maincontainer2 div.first h2 {
@@ -254,21 +268,33 @@ main .maincontainer2 div.first a:hover {
   background-color: #1a6602;
 }
 
-main .maincontainer2 div.first a i img {
-  width: 8%;
-  padding-left: 20px;
+@media screen and (max-width: 1100px) {
+  main .maincontainer2 div.first {
+    padding-bottom: 10%;
+  }
 }
 
 main .maincontainer2 div.second {
-  padding: 6% 7% 10%;
+  padding: 0% 7% 10%;
+}
+
+main .maincontainer2 div.second h2 {
+  padding-bottom: 3%;
+  text-align: center;
 }
 
 main .maincontainer2 .third {
   padding-right: 7%;
 }
 
+@media screen and (max-width: 700px) {
+  main .maincontainer2 .third {
+    padding-right: 0;
+  }
+}
+
 main .maincontainer2 div.fouth {
-  padding-left: 7%;
+  padding: 4% 7%;
 }
 
 main .maincontainer2 div.fouth a {
@@ -299,7 +325,7 @@ footer {
   text-align: center;
   color: white;
   padding: 3% 0%;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 footer .icons a {
