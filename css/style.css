@@ -23,6 +23,7 @@ header .maincontainer1 {
   background-color: #d48166;
   display: -ms-grid;
   display: grid;
+  position: relative;
   -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
@@ -232,6 +233,9 @@ main div.relative .absolute a:hover {
     padding: 0 20px;
     margin: 8% auto;
   }
+  main div.relative .absolute h2 {
+    font-size: 66px;
+  }
 }
 
 main .maincontainer2 {
@@ -257,7 +261,7 @@ main .maincontainer2 div.first h2 {
 
 main .maincontainer2 div.first a {
   text-decoration: none;
-  background-color: green;
+  background-color: #b2030a;
   color: white;
   padding: 13px 100px;
   display: inline;
@@ -265,7 +269,7 @@ main .maincontainer2 div.first a {
 }
 
 main .maincontainer2 div.first a:hover {
-  background-color: #1a6602;
+  background-color: #f10810;
 }
 
 @media screen and (max-width: 1100px) {
@@ -299,7 +303,7 @@ main .maincontainer2 div.fouth {
 
 main .maincontainer2 div.fouth a {
   text-decoration: none;
-  background-color: #1a1c91;
+  background-color: #b2030a;
   text-align: center;
   color: white;
   padding: 13px 7%;
@@ -307,7 +311,7 @@ main .maincontainer2 div.fouth a {
 }
 
 main .maincontainer2 div.fouth a:hover {
-  background-color: #1807af;
+  background-color: #f10810;
 }
 
 main .maincontainer2 div.fouth p {
@@ -335,5 +339,79 @@ footer .icons a {
 
 footer .icons a img {
   width: 3%;
+}
+
+.loginBox, .regBox {
+  display: none;
+  color: white;
+  position: absolute;
+  background-color: #161616;
+  border-radius: 30px;
+  top: 10%;
+  padding: 20px;
+  right: 10%;
+  max-width: 300px;
+  border: 1px solid white;
+}
+
+.loginBox .childLogBox input[type=text], .loginBox .childLogBox input[type=password], .loginBox .childLogBox input[type=email], .regBox .childLogBox input[type=text], .regBox .childLogBox input[type=password], .regBox .childLogBox input[type=email] {
+  padding: 7px;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.loginBox .close, .regBox .close {
+  color: #eee4e4;
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.loginBox label, .regBox label {
+  margin-top: 20px;
+}
+
+.loginBox .popup, .loginBox .popup1, .regBox .popup, .regBox .popup1 {
+  display: none;
+  color: #b31f24;
+}
+
+.loginBox h2, .regBox h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.loginBox button, .regBox button {
+  background-color: black;
+  color: white;
+  padding: 16px 20px;
+  margin: 5% auto;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+}
+
+.loginBox button:hover, .regBox button:hover {
+  background-color: #201e1e;
+}
+
+.loginBox select, .loginBox .selectOpt, .regBox select, .regBox .selectOpt {
+  width: 100%;
+  margin-top: 20px;
+  padding: 7px 0;
+  border-radius: 30px;
+}
+
+.loginBox select option, .loginBox .selectOpt option, .regBox select option, .regBox .selectOpt option {
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .loginBox, .regBox {
+    top: 0%;
+    padding: 20px;
+    right: 0%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.css">
@@ -9,6 +10,7 @@
         
     </head>
     <body>
+        <div id="modalcontainer">
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="img/rock.png" height="50px" width="50px" alt="logo"></a>
@@ -26,6 +28,12 @@
                         </li>
                         <li class="nav-item">
                             <a href="#myconcerts" class="nav-link">My Concerts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link register">Register</a>
                         </li>
                     </ul>
                 </div> 
@@ -151,7 +159,77 @@
             <a><img src="img/IG_white.png" alt="ig logo"></a>
       </div>
     </footer>
-       
+       <div class="bigmodal">
+        <div class="loginBox">
+            <div class="childLogBox">
+                <span class="close">&times;</span>
+                <h2>LOG IN</h2>
+                <div>
+                    <label>Username</label>
+                    <input type="text" name="username" placeholder="Write your name">
+                    <span class="popup">Your Email / Username is Mandatory</span>
+                </div>
+                <div>
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Write your password">
+                    <span class="popup">Your Password is Mandatory</span>
+                </div>
+                <button type="button" id="loginBtn">Log in</button>
+            </div>
+       </div>
+       <div class="regBox">
+        <div class="childLogBox">
+            <span class="close">&times;</span>
+            <h2>Register</h2>
+            <div>
+                <label>Name</label>
+                <input type="text"  placeholder="Write your name">
+                <span class="popup">This field is mandatory</span>
+            </div>
+            <div>
+                <label>Last Name</label>
+                <input type="text" placeholder="Write your last name">
+                <span class="popup">This field is mandatory</span>
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email" placeholder="Write your email">
+                <span class="popup">This field is mandatory</span>
+            </div>
+            <label>Type of music you like..</label>
+                <select class="selectOpt">
+                    <option>-</option>
+                    <option value="rock">Rock</option>
+                    <option value="reggae">Reggae</option>
+                    <option value="dance">Dance</option>
+                </select>
+            <label>Favourite Artist..</label>
+                <select class="select">
+
+                </select>
+            
+            
+            <div>
+                <label>Password</label>
+                <input type="password" name="passwordOrg" placeholder="Create a password">
+                <span class="popup">This field is mandatory</span>
+            </div>
+            <div class="matchpass">
+                <label>Repeat Password</label>
+                <input type="password" name="passwordRep" placeholder="Repeat Password">
+                <span class="popup">Password is Mandatory</span>
+                <span class="popup1">Password should match</span>
+            </div>
+            <button type="button" id="regBtn">Register</button>
+        </div>
+   </div>
+</div>
+</div>
+    
+
+
     </body>
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="jquery.js"></script>
+        <script src="script.js"></script>
 </html>
